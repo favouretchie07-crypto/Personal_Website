@@ -1,0 +1,43 @@
+<html>
+    <body>
+        <div id="title">
+            <h1>Welcome to Tsola's website</h1>
+            <p>This is where I'll practice my web development skills.</p>
+            <button onclick="myWebDevelopmentSkills()">Click to see my web development skills!</button>
+        </div>
+    </body>
+</html>
+
+<style>
+
+    body {
+        background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e');
+        background-size: cover;
+    }
+
+h1 {
+    color: white;
+}
+
+button:hover {
+    background-color: lightblue;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+#title {
+    width: 100%;
+    text-align: center;
+    margin-top: 100px;
+}
+
+</style>
+
+<script>
+
+    function myWebDevelopmentSkills() {
+        document.body.style.background = 'url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e")';
+        document.getElementById("title").style.visibility = "hidden";
+        alert("I am learning HTML, CSS, and JavaScript!");
+    }
+</script>
